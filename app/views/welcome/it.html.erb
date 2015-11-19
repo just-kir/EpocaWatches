@@ -1,0 +1,220 @@
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Epoca Watches</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Collezione</a>
+                    </li>
+                    
+                    <li>
+                        <a class="page-scroll" href="#about">Riguardo a noi</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Contatto</a>
+                    </li>
+                    <li>
+                            <%= link_to 'English', root_path, method: :get%>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">Benvenuti sul sito di Epocawatches</div>
+                <a href="#services" class="page-scroll btn btn-xl">Il nostro negozio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">La nostra collezione</h2>
+                    <h3 class="section-subheading text-muted">Scopri di  <a href="">più</a></h3>
+                </div>
+            </div>
+            <div class="photo-gal">
+  <div class="fotorama" 
+    data-width="40%"
+    data-fit="contain"
+    data-hash="true"
+    data-loop="true"
+    data-keyboard="true"
+    data-transition="crossfade"
+    data-allowfullscreen="true"
+    data-nav="thumbs" data-thumbwidth = "85" 
+    data-thumbheight = "64">
+    <% @documents.each do |u| %>
+  
+      <img src="<%= u.file.url %>">
+    
+  
+    <% end %>
+    <img src="<%=asset_path("3.jpg")%>" >
+      <img src="<%=asset_path("4.jpg")%>" >
+      <img src="<%=asset_path("5.jpg")%>" >
+  
+  </div>
+</div>
+           
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Riguardo a noi</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img img-responsive" src="<%=asset_path("omegagold.jpg")%>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>I</h4>
+                                    
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Se state cercando il vostro primo orologio d'epoca o da aggiungere alla vostra collezione di orologi noi abbiamo quel pezzo di storia.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img img-responsive" src="<%=asset_path("omegasuveran.jpg")%>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>II</h4>
+                                    
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"> Siamo specializzati in orologi d'epoca della Rolex dagli anni 40 fino agli anni 80 con prezzi veramente competitivi.
+                                    Abbiamo anche dei pezzi da collezione di altre marche come Patek Philippe, AP, Cartier, Omega, etc...</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img img-responsive" src="<%=asset_path("rolextudorpink.jpg")%>" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>III</h4>
+                                    
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Tutti gli orologi d'epoca sono stati restaurati dal nostro specializzato e qualificato  orologiaio,con tutte le sue parti originali e la garanzia di un anno. </p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h3><br>Farli <br>ora
+                                   
+                                    </h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contatto</h2>
+                    <h3 class="section-subheading text-muted"> </h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Via Facebook</h4>
+                    <p class="text-muted">Some link</p>
+                </div>
+                <div class="col-md-6">
+                    <span class="fa-stack fa-5x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-at fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Via e-mail</h4>
+                    <p class="text-muted">contact@epocawatches.com</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+   
+    
+    
+
+    <footer>
+    <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                   
+                </div>
+                <div class="col-md-4">
+                                        <span class="copyright">&copy; Epoca Watches 2016</span>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="assets/classie.js"></script>
+    <script src="assets/cbpAnimatedHeader.js"></script>
+
+   <script src="assets/agency.js"></script>
