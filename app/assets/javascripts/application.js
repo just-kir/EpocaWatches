@@ -15,10 +15,10 @@
 //= require bootstrap
 //= require jquery-fileupload
 //= require fotorama
-// require jquery.easing.min
+//= require jquery.easing.min
 // require classie
 // require cbpAnimatedHeader
-// require agency
+//= require agency
 
 
 // require_tree .
