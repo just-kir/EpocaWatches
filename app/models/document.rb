@@ -1,5 +1,5 @@
 class Document < ActiveRecord::Base
-  attr_accessible :file
+  attr_accessible :file, :remember_token
 
   mount_uploader :file, FileUploader
 
