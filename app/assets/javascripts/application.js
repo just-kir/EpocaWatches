@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+// require bootstrap
 //= require jquery-fileupload
 //= require fotorama
-//= require jquery.easing.min
+// require jquery.easing.min
 // require classie
 // require cbpAnimatedHeader
 // require agency
