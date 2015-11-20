@@ -12,13 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+// require bootstrap
 //= require jquery-fileupload
 //= require fotorama
-//= require jquery.easing.min
-//= require classie
-//= require cbpAnimatedHeader
-//= require agency
+// require jquery.easing.min
+// require classie
+// require cbpAnimatedHeader
+// require agency
 
 
 // require_tree .
