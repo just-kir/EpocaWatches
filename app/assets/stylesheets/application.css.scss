@@ -348,6 +348,9 @@ header .intro-text .intro-heading {
     font-weight: 700;
     line-height: 50px;
 }
+header .intro-heading{
+    opacity: 0.75;
+}
 
 @media(min-width:768px) {
     header .intro-text {
